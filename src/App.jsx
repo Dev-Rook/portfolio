@@ -1,4 +1,6 @@
-import Styles from './Appmodule.css';
+import Styles from "./App.module.css";
+
+// import Sidebar from "./Components/_Sidebar/Sidebar";
 
 function App() {
   return (
