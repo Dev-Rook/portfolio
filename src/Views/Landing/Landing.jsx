@@ -8,7 +8,10 @@ const Landing = () => {
   return (
     <div className={Styles.Landing}>
       <Hero />
-      <Featured />
+      <div className={Styles.Slider_Container}>
+        <Featured />
+        <Featured />
+      </div>
     </div>
   );
 };
