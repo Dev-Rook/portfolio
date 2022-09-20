@@ -62,12 +62,24 @@ const Featured = () => {
         >
           <div className={Styles.Tray}>
             {cardData.map((slide) => {
-              const { id, Name, Image, Category, Description } = slide;
+              const { id, Name, Image, Description, Stacks } = slide;
   
               return (
                 <SwiperSlide className={Styles.Slide}>
-                  <div className={Styles.Card} key={id}>
-   
+                  <div className={Styles.Card_Container} key={id}>
+                    <div className={Styles.Display_Image_Container}>
+                        <img src={Image} alt="" className={Styles.Display_Image} />
+                    </div>
+
+                    <h3 className={Styles.Decription}>{Description}</h3>
+
+                    <div className={Styles.Stack_Container}>
+                        <div className={Styles.Stack_Box}>Stack</div>
+                        <div className={Styles.Stack_Box}>Stack</div>
+                        <div className={Styles.Stack_Box}>Stack</div>
+                        <div className={Styles.Stack_Box}>Stack</div>
+                        <div className={Styles.Stack_Box}>Stack</div>
+                    </div>
                   </div>
                 </SwiperSlide>
               );
