@@ -120,4 +120,30 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+.Hero .Info .Info_Section .Tech {
+  padding: 5px;
+  gap: 30px;
+  display: flex;
+  justify-content: left;
+}
+.Hero .Info .Info_Section .Tech .Tech_Card {
+  display: flex;
+  border-radius: 8px;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+}
+.Hero .Info .Info_Section .Tech .Tech_Card .Tech_Image {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Hero {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Hero.module.css.map */

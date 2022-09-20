@@ -2,9 +2,9 @@ import React from "react";
 import Styles from "./Styles/Hero.module.css";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InsertLinkIcon from "@mui/icons-material/InsertLink";
 
 const Hero = () => {
   return (
@@ -44,6 +44,31 @@ const Hero = () => {
               <TwitterIcon />
               Dev_Rook
             </a>
+            <a href="#" className={Styles.WebLink}>
+              <InsertLinkIcon />
+              Developer Resume
+            </a>
+          </div>
+        </div>
+
+        <div className={Styles.Info_Section}>
+          <h3 className={Styles.Title}>Technologies Used</h3>
+          <div className={Styles.Tech}>
+            <div className={Styles.Tech_Card}>
+              <img src={require("../../Assets/Icons/Html-Icon.png")} alt="" className={Styles.Tech_Image} />
+            </div>
+            <div className={Styles.Tech_Card}>
+              <img src={require("../../Assets/Icons/Css-Icon.png")} alt="" className={Styles.Tech_Image} />
+            </div>
+            <div className={Styles.Tech_Card}>
+              <img src={require("../../Assets/Icons/Scss-Icon.png")} alt="" className={Styles.Tech_Image} />
+            </div>
+            <div className={Styles.Tech_Card}>
+              <img src={require("../../Assets/Icons/JavaScript-Icon.png")} alt="" className={Styles.Tech_Image} />
+            </div>
+            <div className={Styles.Tech_Card}>
+              <img src={require("../../Assets/Icons/React-Icon.png")} alt="" className={Styles.Tech_Image} />
+            </div>
           </div>
         </div>
       </div>
