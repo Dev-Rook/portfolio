@@ -1,0 +1,70 @@
+.Hero {
+  border: 1px solid white;
+  display: flex;
+  padding: 5px;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+  width: 1000px;
+  position: relative;
+}
+.Hero .Content_Box {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+.Hero .Content_Box .Small_Text {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+  margin: 0px;
+}
+.Hero .Content_Box .Large_Text {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  text-align: left;
+  margin: 0px;
+}
+.Hero .Content_Box .Large_Text .Red_R {
+  color: red;
+}
+.Hero .Content_Box .Social_Icon_Bar {
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Hero .Content_Box .Social_Icon_Bar .Social_Icon {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: white;
+  display: flex;
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+}
+.Hero .Content_Box .Contact_Button {
+  border: 1px solid red;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: left;
+}/*# sourceMappingURL=Hero.module.css.map */
