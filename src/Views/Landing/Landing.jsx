@@ -1,13 +1,16 @@
-import React from 'react'
-import Hero from '../Hero/Hero'
-import Styles from "./Styles/Landing.module.css"
+import React from "react";
+import Styles from "./Styles/Landing.module.css";
+
+import Hero from "../Hero/Hero";
+import Featured from "../../Components/Project-Data/Featured/Featured";
 
 const Landing = () => {
   return (
     <div className={Styles.Landing}>
-        <Hero />
+      <Hero />
+      <Featured />
     </div>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;
