@@ -13,7 +13,6 @@
   //   height: 100%;
   width: 1200px;
   position: relative;
-  overflow: hidden;   
 
   .Hero_Board {
     background-color: white;
@@ -23,7 +22,7 @@
     height: 400px;
     width: 100%;
 
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .Content_Box {
@@ -36,8 +35,8 @@
     .Small_Text {
       color: white;
       font-family: sans-serif;
-      font-weight: 400;
-      font-size: 30px;
+      font-weight: 100;
+      font-size: 25px;
       text-align: left;
       margin: 0px;
       transition: 0.5s;
@@ -47,7 +46,7 @@
       color: white;
       font-family: sans-serif;
       font-weight: 400;
-      font-size: 120px;
+      font-size: 90px;
       text-align: left;
       margin: 0px;
       transition: 0.5s;
@@ -67,7 +66,7 @@
       font-family: sans-serif;
       font-weight: 400;
       font-size: 25px;
-      transition: .5s;
+      transition: 0.5s;
     }
   }
 
@@ -75,7 +74,7 @@
     display: flex;
     flex-direction: column;
 
-    gap: 20px;
+    gap: 50px;
 
     justify-content: space-evenly;
     align-items: left;
@@ -97,17 +96,20 @@
         font-family: sans-serif;
         font-size: 35px;
         font-weight: 500;
+
+        border-bottom: 2px solid rgba(0, 0, 0, .9);
+        width: fit-content;
       }
       .Bio_Text {
-        color: white;
+        color: grey;
         font-family: sans-serif;
         font-size: 20px;
         font-weight: 500;
-        transition: .5s;
+        transition: 0.5s;
       }
 
       .Web_Profiles {
-        gap: 30px;
+        gap: 20px;
         display: flex;
         justify-content: left;
         flex-wrap: wrap;
@@ -125,8 +127,7 @@
       }
 
       .Tech {
-        padding: 5px;
-        gap: 30px;
+        gap: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
@@ -139,14 +140,14 @@
           width: 90px;
 
           overflow: hidden;
-          transition: .5s;
+          transition: 0.5s;
 
           .Tech_Image {
             margin: auto;
             height: 100%;
             width: 100%;
             object-fit: cover;
-            transition: .5s;
+            transition: 0.5s;
           }
         }
       }
@@ -178,6 +179,16 @@
     .Content_Box {
       .Large_Text {
         font-size: 85px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .Hero {
+    .Content_Box {
+      .Tech {
+        overflow: scroll;
       }
     }
   }

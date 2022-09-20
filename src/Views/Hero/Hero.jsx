@@ -16,7 +16,7 @@ const Hero = () => {
           Daniel <span className={Styles.Red_R}>R</span>ook
         </h1>
         <p className={Styles.Small_Text}>React Developer</p>
-        <button className={Styles.Contact_Button}>Contact</button>
+        {/* <button className={Styles.Contact_Button}>Contact</button> */}
       </div>
 
       <div className={Styles.Info}>

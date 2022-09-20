@@ -1,32 +1,29 @@
-
-
 .Landing {
-    border: 1px solid blue;
+  border: 1px solid blue;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 1200px;
+  position: relative;
+
+  .Slider_Container {
     display: flex;
-    gap: 50px;
     flex-direction: column;
-    justify-content: center;
+
+    gap: 20px;
+
+    justify-content: space-evenly;
     align-items: center;
-    height: 100%;
-    width: 1200px;
-    position: relative;
-    overflow: hidden;  
-    
-    .Slider_Container {
-        display: flex;
-        flex-direction: column;
 
-        gap: 20px;
-
-        justify-content: space-evenly;
-        align-items: center;
-
-        width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .Landing {
-        width: 100%;
-    }
+  .Landing {
+    width: 100%;
+  }
 }
