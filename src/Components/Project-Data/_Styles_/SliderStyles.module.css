@@ -47,7 +47,6 @@
   font-weight: 200;
 }
 .Rack .Swiper .Card_Container .Stack_Container {
-  border: 2px solid black;
   display: flex;
   padding: 2px;
   gap: 10px;
@@ -56,6 +55,7 @@
   width: 100%;
 }
 .Rack .Swiper .Card_Container .Stack_Container .Stack_Box {
+  background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid black;
   display: flex;
   padding: 2px;

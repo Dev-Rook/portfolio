@@ -62,7 +62,6 @@
       }
 
       .Stack_Container {
-        border: 2px solid black;
         display: flex;
 
         padding: 2px;
@@ -74,6 +73,7 @@
         width: 100%;
 
         .Stack_Box {
+          background-color: rgba(0, 0, 0, 0.4);
           border: 2px solid black;
           display: flex;
           padding: 2px;
