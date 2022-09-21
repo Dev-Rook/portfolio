@@ -65,6 +65,8 @@ const Nav = () => {
 
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.ShowMenu : ""}`}>
         <div className={Styles.Header}>
+          <h3 className={Styles.Brand}>Dev Rook</h3>
+
           <CloseIcon
             className={Styles.CloseIcon}
             sx={{ fontSize: 30 }}
@@ -72,22 +74,21 @@ const Nav = () => {
           />
         </div>
 
-        <ul className={Styles.MenuLink_Container}>
-          <li className={Styles.MenuLink_Item}></li>
+        <div className={Styles.MenuLink_Container}>
           <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
+            className={Styles.Accordion}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                General settings
-              </Typography>
-              <Typography sx={{ color: "text.secondary" }}>
-                I am an accordion
+              <Typography
+                sx={{ width: "33%", flexShrink: 0}}
+              >
+                Portfolio
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -100,6 +101,7 @@ const Nav = () => {
           <Accordion
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
+            className={Styles.Accordion}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -107,10 +109,7 @@ const Nav = () => {
               id="panel2bh-header"
             >
               <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Users
-              </Typography>
-              <Typography sx={{ color: "text.secondary" }}>
-                You are currently not an owner
+                Posts
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -122,32 +121,9 @@ const Nav = () => {
             </AccordionDetails>
           </Accordion>
           <Accordion
-            expanded={expanded === "panel3"}
-            onChange={handleChange("panel3")}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel3bh-content"
-              id="panel3bh-header"
-            >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Advanced settings
-              </Typography>
-              <Typography sx={{ color: "text.secondary" }}>
-                Filtering has been entirely disabled for whole web server
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
             expanded={expanded === "panel4"}
             onChange={handleChange("panel4")}
+            className={Styles.Accordion}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -166,7 +142,7 @@ const Nav = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-        </ul>
+        </div>
       </div>
     </nav>
   );
