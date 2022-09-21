@@ -29,8 +29,25 @@ const Nav = () => {
   return (
     <nav className={Styles.Nav}>
       <div className={Styles.Left_Side}>
-        <h3 className={Styles.Brand}>Dev Rook</h3>
+        <p className={Styles.Brand}>Dev Rook</p>
 
+        <ul className={Styles.Navlink_Container}>
+        <li className={Styles.NavItem}>
+          <a href="#" className={Styles.Navlink}>
+            Home
+          </a>
+        </li>
+        <li className={Styles.NavItem}>
+          <a href="#" className={Styles.Navlink}>
+            Portfolio
+          </a>
+        </li>
+        <li className={Styles.NavItem}>
+          <a href="#" className={Styles.Navlink}>
+            Posts
+          </a>
+        </li>
+      </ul>
 
       </div>
       <img
