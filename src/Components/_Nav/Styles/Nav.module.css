@@ -38,6 +38,11 @@
   transform: translateX(0%);
 }
 
+@media only screen and (max-width: 1200px) {
+  .Nav {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .Nav .Mobile_Menu {
     width: 100%;
