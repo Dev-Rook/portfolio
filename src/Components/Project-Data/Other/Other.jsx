@@ -13,14 +13,14 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
-import FeaturedData from "./FeaturedData";
+import OtherData from "./OtherData"
 
-const Featured = () => {
-  const [cardData, setCardData] = useState(FeaturedData);
+const Other = () => {
+  const [cardData, setCardData] = useState(OtherData);
 
   return (
     <div className={Styles.Rack}>
-      <h3 className={Styles.Rack_Title}>Featured Projects</h3>
+      <h3 className={Styles.Rack_Title}>Other Projects</h3>
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel]}
@@ -89,4 +89,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Other;
