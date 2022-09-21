@@ -74,6 +74,18 @@ const Nav = () => {
           />
         </div>
 
+
+      <div className={Styles.Profile_Section}>
+        <div className={Styles.Image_Container}>
+          <img src={require("../../Assets/Images/Brown-Topography-Map.jpg")} alt="" className={Styles.Profile_Image} />
+        </div>
+
+        <div className={Styles.Profile_Information_Box}>
+
+        </div>
+      </div>
+
+
         <div className={Styles.MenuLink_Container}>
           <Accordion
             expanded={expanded === "panel1"}
@@ -131,7 +143,29 @@ const Nav = () => {
               id="panel4bh-header"
             >
               <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Personal data
+                YouTube
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
+                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
+                augue.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+            className={Styles.Accordion}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4bh-content"
+              id="panel4bh-header"
+            >
+              <Typography sx={{ width: "33%", flexShrink: 0 }}>
+                Contact
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
