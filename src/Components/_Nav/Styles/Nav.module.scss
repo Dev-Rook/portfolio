@@ -5,7 +5,7 @@
   position: relative;
   position: fixed;
   padding: 5px;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   width: 1200px;
   overflow-x: hidden;
@@ -14,8 +14,36 @@
 
   z-index: 99;
 
+  .Left_Side {
+    display: flex;
+    gap: 20px;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    .Navlink_Container {
+      display: flex;
+
+      padding: 0px;
+      gap: 30px;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      .NavItem {
+        .NavLink {
+          color: white;
+          font-family: sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
   .Nav_Icon {
-    height: 40px;
+    height: 30px;
     transform: rotateY(180deg);
     transition: 0.5s;
   }

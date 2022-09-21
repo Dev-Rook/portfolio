@@ -28,6 +28,11 @@ const Nav = () => {
 
   return (
     <nav className={Styles.Nav}>
+      <div className={Styles.Left_Side}>
+        <h3 className={Styles.Brand}>Dev Rook</h3>
+
+
+      </div>
       <img
         src={require("../../Assets/Icons/Menu-Icon.png")}
         alt=""
