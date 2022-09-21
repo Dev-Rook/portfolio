@@ -2,7 +2,7 @@
 .Hero {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 10px;
   gap: 50px;
   justify-content: space-evenly;
   align-items: left;

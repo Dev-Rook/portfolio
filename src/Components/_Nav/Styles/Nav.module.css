@@ -57,6 +57,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   position: fixed;
   top: 0;
   right: 0;
@@ -154,5 +155,10 @@
   }
   .Nav .Mobile_Menu {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Nav .Mobile_Menu .Profile_Section {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=Nav.module.css.map */
