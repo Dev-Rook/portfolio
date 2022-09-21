@@ -44,7 +44,7 @@ const Hero = () => {
               <TwitterIcon />
               Dev_Rook
             </a>
-            <a target={"_blank"} href="https://rxresu.me/dev.rook121/developer-resume#" className={Styles.WebLink}>
+            <a target={"_blank"} href="https://rxresu.me/dev.rook121/developer-resume" className={Styles.WebLink}>
               <InsertLinkIcon />
               Developer Resume
             </a>
