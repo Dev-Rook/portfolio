@@ -1,14 +1,19 @@
 .Nav {
-  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   position: relative;
+  position: fixed;
   padding: 5px;
   justify-content: right;
   align-items: center;
-  width: 100%;
+  width: 1200px;
+  overflow-x: hidden;
+  top: 0;
+  z-index: 99;
 }
 .Nav .Nav_Icon {
-  height: 25px;
+  height: 40px;
   transform: rotateY(180deg);
   transition: 0.5s;
 }

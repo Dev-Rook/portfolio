@@ -55,7 +55,7 @@ const Featured = () => {
             },
             1920: {
               width: 1920,
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 0,
             },
           }}
