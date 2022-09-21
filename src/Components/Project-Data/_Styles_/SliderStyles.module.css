@@ -47,6 +47,7 @@
   font-weight: 200;
 }
 .Rack .Swiper .Card_Container .Stack_Container {
+  border: 2px solid black;
   display: flex;
   padding: 2px;
   gap: 10px;
