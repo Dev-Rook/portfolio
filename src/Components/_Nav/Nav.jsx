@@ -4,6 +4,7 @@ import Styles from "./Styles/Nav.module.css";
 // import Accordion from "react-bootstrap/Accordion";
 
 import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
 import BrightnessMediumIcon from "@mui/icons-material/BrightnessMedium";
 
 import Accordion from "@mui/material/Accordion";
@@ -50,10 +51,13 @@ const Nav = () => {
       </div>
 
       <div className={Styles.Right_Side}>
-        <BrightnessMediumIcon sx={{fontSixe: 30}} className={Styles.ModeIcon} />
-        <img
-          src={require("../../Assets/Icons/Menu-Icon.png")}
-          alt=""
+        <BrightnessMediumIcon
+          sx={{ fontSixe: 30 }}
+          className={Styles.ModeIcon}
+        />
+
+        <MenuIcon
+          sx={{ fontSixe: 40 }}
           onClick={toogleMenu}
           className={Styles.Nav_Icon}
         />

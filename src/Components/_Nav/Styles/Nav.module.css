@@ -47,7 +47,7 @@
   color: white;
 }
 .Nav .Right_Side .Nav_Icon {
-  height: 30px;
+  color: white;
   transform: rotateY(180deg);
   transition: 0.5s;
   display: none;
