@@ -13,6 +13,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+
+import Featured from "../Project-Data/Featured/Featured";
+
 const Nav = () => {
   const [menu, setMenu] = useState(false);
 
@@ -143,28 +146,6 @@ const Nav = () => {
               id="panel4bh-header"
             >
               <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                YouTube
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "panel4"}
-            onChange={handleChange("panel4")}
-            className={Styles.Accordion}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel4bh-content"
-              id="panel4bh-header"
-            >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
                 Contact
               </Typography>
             </AccordionSummary>
@@ -177,6 +158,8 @@ const Nav = () => {
             </AccordionDetails>
           </Accordion>
         </div>
+
+        <Featured />
       </div>
     </nav>
   );

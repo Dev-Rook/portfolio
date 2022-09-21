@@ -60,6 +60,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  gap: 0px;
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
