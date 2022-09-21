@@ -4,8 +4,7 @@ import Styles from "./Styles/Nav.module.css";
 // import Accordion from "react-bootstrap/Accordion";
 
 import CloseIcon from "@mui/icons-material/Close";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import BrightnessMediumIcon from "@mui/icons-material/BrightnessMedium";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -32,30 +31,33 @@ const Nav = () => {
         <p className={Styles.Brand}>Dev Rook</p>
 
         <ul className={Styles.Navlink_Container}>
-        <li className={Styles.NavItem}>
-          <a href="#" className={Styles.Navlink}>
-            Home
-          </a>
-        </li>
-        <li className={Styles.NavItem}>
-          <a href="#" className={Styles.Navlink}>
-            Portfolio
-          </a>
-        </li>
-        <li className={Styles.NavItem}>
-          <a href="#" className={Styles.Navlink}>
-            Posts
-          </a>
-        </li>
-      </ul>
-
+          <li className={Styles.NavItem}>
+            <a href="#" className={Styles.Navlink}>
+              Home
+            </a>
+          </li>
+          <li className={Styles.NavItem}>
+            <a href="#" className={Styles.Navlink}>
+              Portfolio
+            </a>
+          </li>
+          <li className={Styles.NavItem}>
+            <a href="#" className={Styles.Navlink}>
+              Posts
+            </a>
+          </li>
+        </ul>
       </div>
-      <img
-        src={require("../../Assets/Icons/Menu-Icon.png")}
-        alt=""
-        onClick={toogleMenu}
-        className={Styles.Nav_Icon}
-      />
+
+      <div className={Styles.Right_Side}>
+        <BrightnessMediumIcon sx={{fontSixe: 30}} className={Styles.ModeIcon} />
+        <img
+          src={require("../../Assets/Icons/Menu-Icon.png")}
+          alt=""
+          onClick={toogleMenu}
+          className={Styles.Nav_Icon}
+        />
+      </div>
 
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.ShowMenu : ""}`}>
         <div className={Styles.Header}>

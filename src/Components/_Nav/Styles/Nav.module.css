@@ -7,8 +7,8 @@
   padding: 5px;
   justify-content: space-between;
   align-items: center;
+  height: auto;
   width: 1200px;
-  overflow-x: hidden;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   top: 0;
@@ -38,10 +38,18 @@
   font-size: 15px;
   font-weight: 400;
 }
-.Nav .Nav_Icon {
+.Nav .Right_Side {
+  display: flex;
+  gap: 20px;
+}
+.Nav .Right_Side .ModeIcon {
+  color: white;
+}
+.Nav .Right_Side .Nav_Icon {
   height: 30px;
   transform: rotateY(180deg);
   transition: 0.5s;
+  display: none;
 }
 .Nav .Mobile_Menu {
   border: 1px solid black;
@@ -70,6 +78,12 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  .Nav .Left_Side .Navlink_Container {
+    display: none;
+  }
+  .Nav .Right_Side .Nav_Icon {
+    display: block;
+  }
   .Nav .Mobile_Menu {
     width: 100%;
   }
