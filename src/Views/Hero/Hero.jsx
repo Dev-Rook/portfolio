@@ -32,19 +32,19 @@ const Hero = () => {
         <div className={Styles.Info_Section}>
           <h3 className={Styles.Title}>On The Web</h3>
           <div className={Styles.Web_Profiles}>
-            <a href="#" className={Styles.WebLink}>
+            <a target={"_blank"} href="https://www.linkedin.com/in/dev-rook/" className={Styles.WebLink}>
               <LinkedInIcon />
               Daniel Brown
             </a>
-            <a href="#" className={Styles.WebLink}>
+            <a target={"_blank"} href="https://github.com/Dev-Rook" className={Styles.WebLink}>
               <GitHubIcon />
               Dev-Rook
             </a>
-            <a href="#" className={Styles.WebLink}>
+            <a target={"_blank"} href="https://twitter.com/Dev_Rook" className={Styles.WebLink}>
               <TwitterIcon />
               Dev_Rook
             </a>
-            <a href="#" className={Styles.WebLink}>
+            <a target={"_blank"} href="https://rxresu.me/dev.rook121/developer-resume#" className={Styles.WebLink}>
               <InsertLinkIcon />
               Developer Resume
             </a>
