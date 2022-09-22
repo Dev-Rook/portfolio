@@ -3,7 +3,7 @@ import Styles from "./Styles/HeroSlider.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, FreeMode, Pagination, Mousewheel } from "swiper";
+import { Navigation, FreeMode, Autoplay, Mousewheel } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,7 +20,11 @@ const HeroSlider = () => {
         speed={800}
         slidesPerView={1}
         spaceBetween={10}
-        modules={[Navigation, FreeMode, Mousewheel]}
+        modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         loop
         pagination={{
