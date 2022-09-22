@@ -3,7 +3,7 @@ import Styles from "../_Styles_/SliderStyles.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, FreeMode, Pagination, Mousewheel } from "swiper";
+import { Navigation, FreeMode, Autoplay, Mousewheel } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -23,7 +23,11 @@ const Other = () => {
       <h3 className={Styles.Rack_Title}>Other Projects</h3>
       <Swiper
         speed={800}
-        modules={[Navigation, FreeMode, Mousewheel]}
+        modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         loop
         pagination={{
