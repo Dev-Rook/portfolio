@@ -19,15 +19,8 @@
   .Left_Side {
     display: flex;
 
-    .Brand {
-      color: red;
-      font-family: sans-serif;
-      font-size: 30px;
-      font-weight: 400;
-
-      text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
-
-      margin: auto;
+    .Logo {
+      height: 30px;
     }
 
     .Navlink_Container {
@@ -102,23 +95,15 @@
 
       z-index: 10;
 
-      .Brand {
-        color: red;
-        font-family: sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-
-        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
-
-        margin: auto;
-        margin-left: 0px;
+      .Logo {
+        height: 30px;
       }
 
       .CloseIcon {
         color: white;
       }
     }
-    
+
     .Profile_Section {
       display: flex;
       padding: 5px;
@@ -130,25 +115,6 @@
       width: 100%;
 
       margin-top: 70px;
-
-      .Image_Container {
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-          rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        display: flex;
-
-        overflow: hidden;
-
-        height: 150px;
-        width: 200px;
-
-        .Profile_Image {
-          height: 100%;
-          width: 100%;
-          margin: auto;
-          object-fit: cover;
-          transition: 0.5s;
-        }
-      }
     }
 
     .MenuLink_Container {
@@ -206,7 +172,7 @@
   .Nav {
     .Mobile_Menu {
       .Profile_Section {
-        margin-top: 100px;
+        margin-top: 300px;
       }
     }
   }

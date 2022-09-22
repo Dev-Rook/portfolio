@@ -34,7 +34,7 @@ const HeroSlider = () => {
         className={Styles.Swiper}
       >
         <SwiperSlide className={Styles.Slide}>
-          <img src={require("../../../Assets/Images/Brown-Topography-Map.jpg")} alt="" className={Styles.Slide_Image} />
+          {/* <img src={require("../../../Assets/Images/Brown-Topography-Map.jpg")} alt="" className={Styles.Slide_Image} /> */}
         </SwiperSlide>
       </Swiper>
     </div>

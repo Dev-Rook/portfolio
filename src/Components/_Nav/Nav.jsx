@@ -33,7 +33,7 @@ const Nav = () => {
   return (
     <nav className={Styles.Nav}>
       <div className={Styles.Left_Side}>
-        <p className={Styles.Brand}>Dev Rook</p>
+        <img src={require("../../Assets/Icons/Logo.png")} alt="" className={Styles.Logo} />
 
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
@@ -69,7 +69,7 @@ const Nav = () => {
 
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.ShowMenu : ""}`}>
         <div className={Styles.Header}>
-          <h3 className={Styles.Brand}>Dev Rook</h3>
+        <img src={require("../../Assets/Icons/Logo.png")} alt="" className={Styles.Logo} />
 
           <CloseIcon
             className={Styles.CloseIcon}
