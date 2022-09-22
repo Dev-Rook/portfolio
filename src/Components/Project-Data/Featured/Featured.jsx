@@ -73,12 +73,18 @@ const Featured = () => {
                   <h3 className={Styles.Decription}>{Description}</h3>
 
                   <div className={Styles.Stack_Container}>
-                    <button className={Styles.Stack_Box}>Stack</button>
-                    <button className={Styles.Stack_Box}>Stack</button>
-                    <button className={Styles.Stack_Box}>Stack</button>
-                    <button className={Styles.Stack_Box}>Stack</button>
-                    <button className={Styles.Stack_Box}>Stack</button>
-
+                    <button className={Styles.Stack_Box}>
+                      {Stacks.Stack1}
+                    </button>
+                    <button className={Styles.Stack_Box}>
+                      {Stacks.Stack2}
+                    </button>
+                    <button className={Styles.Stack_Box}>
+                      {Stacks.Stack3}
+                    </button>
+                    <button className={Styles.Stack_Box}>
+                      {Stacks.Stack4}
+                    </button>
                   </div>
                 </div>
               </SwiperSlide>

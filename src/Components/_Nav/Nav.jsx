@@ -13,6 +13,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+import HeroSlider from "../Sliders/Hero-Slider/HeroSlider";
 
 import Featured from "../Project-Data/Featured/Featured";
 
@@ -77,17 +78,9 @@ const Nav = () => {
           />
         </div>
 
-
-      <div className={Styles.Profile_Section}>
-        <div className={Styles.Image_Container}>
-          <img src={require("../../Assets/Images/Brown-Topography-Map.jpg")} alt="" className={Styles.Profile_Image} />
+        <div className={Styles.Profile_Section}>
+          <HeroSlider />
         </div>
-
-        <div className={Styles.Profile_Information_Box}>
-
-        </div>
-      </div>
-
 
         <div className={Styles.MenuLink_Container}>
           <Accordion
@@ -100,9 +93,7 @@ const Nav = () => {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography
-                sx={{ width: "33%", flexShrink: 0}}
-              >
+              <Typography sx={{ width: "33%", flexShrink: 0 }}>
                 Portfolio
               </Typography>
             </AccordionSummary>
@@ -110,28 +101,6 @@ const Nav = () => {
               <Typography>
                 Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
                 feugiat. Aliquam eget maximus est, id dignissim quam.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
-            className={Styles.Accordion}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel2bh-content"
-              id="panel2bh-header"
-            >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Posts
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Donec placerat, lectus sed mattis semper, neque lectus feugiat
-                lectus, varius pulvinar diam eros in elit. Pellentesque
-                convallis laoreet laoreet.
               </Typography>
             </AccordionDetails>
           </Accordion>

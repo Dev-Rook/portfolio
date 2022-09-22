@@ -4,10 +4,10 @@ const FeaturedData = [
     Name: "Name",
     Description: "Placeholder text for project details",
     Stacks: {
-      Stack1: "Stack",
-      Stack2: "Stack",
-      Stack3: "Stack",
-      Stack4: "Stack",
+      Stack1: "React JS",
+      Stack2: "Material UI",
+      Stack3: "Framer Motion",
+      Stack4: "AOS",
     },
   },
   {

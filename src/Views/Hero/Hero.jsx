@@ -6,10 +6,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 
+import HeroSlider from "../../Components/Sliders/Hero-Slider/HeroSlider";
+
 const Hero = () => {
   return (
     <div className={Styles.Hero}>
-      <div className={Styles.Hero_Board}></div>
+      <HeroSlider />
+      {/* <div className={Styles.Hero_Board}></div> */}
       <div className={Styles.Content_Box}>
         <p className={Styles.Small_Text}>Hi, I'm</p>
         <h1 className={Styles.Large_Text}>

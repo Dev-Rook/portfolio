@@ -1,0 +1,30 @@
+.HeroSliderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  transition: 0.5s;
+}
+.HeroSliderContainer .Swiper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.HeroSliderContainer .Swiper .Slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeroSliderContainer .Swiper .Slide .Slide_Image {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=HeroSlider.module.css.map */
