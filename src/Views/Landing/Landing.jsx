@@ -1,11 +1,12 @@
 import React from "react";
 import Styles from "./Styles/Landing.module.css";
 
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 import Hero from "../Hero/Hero";
 import Featured from "../../Components/Project-Data/Featured/Featured";
 import Other from "../../Components/Project-Data/Other/Other";
+import Youtube from "../../Components/Sliders/YouTube/Youtube";
 
 const Landing = () => {
   return (
@@ -19,6 +20,7 @@ const Landing = () => {
           Portfolio
           <KeyboardArrowRightIcon />
         </button>
+        <Youtube />
       </div>
     </div>
   );
