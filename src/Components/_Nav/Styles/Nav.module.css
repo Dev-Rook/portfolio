@@ -4,7 +4,7 @@
   display: flex;
   position: relative;
   position: fixed;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
   height: auto;
