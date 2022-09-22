@@ -58,6 +58,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  padding: 5px;
   gap: 15px;
   justify-content: center;
   align-items: center;
@@ -87,7 +88,6 @@
 }
 .Nav .Mobile_Menu .Profile_Section {
   display: flex;
-  padding: 5px;
   justify-content: space-between;
   align-items: center;
   height: -webkit-fit-content;

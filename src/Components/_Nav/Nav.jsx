@@ -127,8 +127,8 @@ const Nav = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-
         <Featured />
+
       </div>
     </nav>
   );
