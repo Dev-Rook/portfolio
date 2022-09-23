@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Styles from "./Styles/Youtube.module.css";
+import Styles from "./Styles/Social.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,14 +13,14 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
-import YoutubeData from "./YoutubeData";
+import SocialData from "./SocialData";
 
 const Youtube = () => {
-    const [cardData, setCardData] = useState(YoutubeData);
+    const [cardData, setCardData] = useState(SocialData);
 
   return (
     <div className={Styles.Rack}>
-      <h3 className={Styles.Rack_Title}>YouTube</h3>
+      <h3 className={Styles.Rack_Title}>Social</h3>
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}

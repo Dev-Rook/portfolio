@@ -1,28 +1,28 @@
-const YouTubeData = [
+const SocialData = [
   {
     id: 1,
     Thumbnail: "",
-    Title: "Title",
+    Title: "Code Runners",
   },
   {
     id: 2,
     Thumbnail: "",
-    Title: "Title",
+    Title: "YouTube",
   },
   {
     id: 3,
     Thumbnail: "",
-    Title: "Title",
+    Title: "Twitter",
   },
   {
     id: 4,
     Thumbnail: "",
-    Title: "Title",
+    Title: "Instagram",
   },
   {
     id: 5,
     Thumbnail: "",
-    Title: "Title",
+    Title: "Steam",
   },
   {
     id: 6,
@@ -31,4 +31,4 @@ const YouTubeData = [
   },
 ];
 
-export default YouTubeData
+export default SocialData

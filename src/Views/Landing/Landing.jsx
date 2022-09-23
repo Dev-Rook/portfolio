@@ -6,7 +6,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Hero from "../Hero/Hero";
 import Featured from "../../Components/Project-Data/Featured/Featured";
 import Other from "../../Components/Project-Data/Other/Other";
-import Youtube from "../../Components/Sliders/YouTube/Youtube";
+import Social from "../../Components/Sliders/Social/Social";
 
 const Landing = () => {
   return (
@@ -20,7 +20,7 @@ const Landing = () => {
           Portfolio
           <KeyboardArrowRightIcon />
         </button>
-        <Youtube />
+        <Social />
       </div>
     </div>
   );

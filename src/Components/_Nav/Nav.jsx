@@ -21,7 +21,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import HeroSlider from "../Sliders/Hero-Slider/HeroSlider";
 
 import Featured from "../Project-Data/Featured/Featured";
-import Youtube from "../Sliders/YouTube/Youtube";
+import Social from "../Sliders/Social/Social";
 
 const Nav = () => {
   const [menu, setMenu] = useState(false);
