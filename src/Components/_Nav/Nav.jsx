@@ -7,6 +7,11 @@ import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import BrightnessMediumIcon from "@mui/icons-material/BrightnessMedium";
 
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InsertLinkIcon from "@mui/icons-material/InsertLink";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -33,7 +38,11 @@ const Nav = () => {
   return (
     <nav className={Styles.Nav}>
       <div className={Styles.Left_Side}>
-        <img src={require("../../Assets/Icons/Logo.png")} alt="" className={Styles.Logo} />
+        <img
+          src={require("../../Assets/Icons/Logo.png")}
+          alt=""
+          className={Styles.Logo}
+        />
 
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
@@ -68,13 +77,16 @@ const Nav = () => {
       </div>
 
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.ShowMenu : ""}`}>
-        
         <div className={Styles.Header}>
-        <img src={require("../../Assets/Icons/Logo.png")} alt="" className={Styles.Logo} />
+          <img
+            src={require("../../Assets/Icons/Logo.png")}
+            alt=""
+            className={Styles.Logo}
+          />
 
-        <h1 className={Styles.Large_Text}>
-          Daniel <span className={Styles.Red_R}>R</span>ook
-        </h1>
+          <h1 className={Styles.Large_Text}>
+            Daniel <span className={Styles.Red_R}>R</span>ook
+          </h1>
 
           <CloseIcon
             className={Styles.CloseIcon}
@@ -96,7 +108,7 @@ const Nav = () => {
           </li>
           <li className={Styles.NavItem}>
             <a href="" className={Styles.Navlink}>
-              Post
+              Posts
             </a>
           </li>
           <li className={Styles.NavItem}>
@@ -106,9 +118,14 @@ const Nav = () => {
           </li>
         </ul>
 
+        <div className={Styles.Social_Icon_Bar}>
+          <LinkedInIcon className={Styles.Social_Icon} />
+          <GitHubIcon className={Styles.Social_Icon} />
+          <TwitterIcon className={Styles.Social_Icon} />
+          <InsertLinkIcon className={Styles.Social_Icon} />
+        </div>
 
-        {/* <Featured /> */}
-
+        <Featured />
       </div>
     </nav>
   );
