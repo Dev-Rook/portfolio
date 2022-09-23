@@ -77,55 +77,57 @@ const Nav = () => {
       </div>
 
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.ShowMenu : ""}`}>
-        <div className={Styles.Header}>
-          <img
-            src={require("../../Assets/Icons/Logo.png")}
-            alt=""
-            className={Styles.Logo}
-          />
+        <div className={Styles.Content_Wrapper}>
+          <div className={Styles.Header}>
+            <img
+              src={require("../../Assets/Icons/Logo.png")}
+              alt=""
+              className={Styles.Logo}
+            />
 
-          <h1 className={Styles.Large_Text}>
-            Daniel <span className={Styles.Red_R}>R</span>ook
-          </h1>
+            <h1 className={Styles.Large_Text}>
+              Daniel <span className={Styles.Red_R}>R</span>ook
+            </h1>
 
-          <CloseIcon
-            className={Styles.CloseIcon}
-            sx={{ fontSize: 30 }}
-            onClick={toogleMenu}
-          />
+            <CloseIcon
+              className={Styles.CloseIcon}
+              sx={{ fontSize: 30 }}
+              onClick={toogleMenu}
+            />
+          </div>
+
+          <ul className={Styles.Navlink_Container}>
+            <li className={Styles.NavItem}>
+              <a href="" className={Styles.Navlink}>
+                Home
+              </a>
+            </li>
+            <li className={Styles.NavItem}>
+              <a href="" className={Styles.Navlink}>
+                Portfolio
+              </a>
+            </li>
+            <li className={Styles.NavItem}>
+              <a href="" className={Styles.Navlink}>
+                Posts
+              </a>
+            </li>
+            <li className={Styles.NavItem}>
+              <a href="" className={Styles.Navlink}>
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <div className={Styles.Social_Icon_Bar}>
+            <LinkedInIcon className={Styles.Social_Icon} />
+            <GitHubIcon className={Styles.Social_Icon} />
+            <TwitterIcon className={Styles.Social_Icon} />
+            <InsertLinkIcon className={Styles.Social_Icon} />
+          </div>
+
+          <Featured />
         </div>
-
-        <ul className={Styles.Navlink_Container}>
-          <li className={Styles.NavItem}>
-            <a href="" className={Styles.Navlink}>
-              Home
-            </a>
-          </li>
-          <li className={Styles.NavItem}>
-            <a href="" className={Styles.Navlink}>
-              Portfolio
-            </a>
-          </li>
-          <li className={Styles.NavItem}>
-            <a href="" className={Styles.Navlink}>
-              Posts
-            </a>
-          </li>
-          <li className={Styles.NavItem}>
-            <a href="" className={Styles.Navlink}>
-              Contact
-            </a>
-          </li>
-        </ul>
-
-        <div className={Styles.Social_Icon_Bar}>
-          <LinkedInIcon className={Styles.Social_Icon} />
-          <GitHubIcon className={Styles.Social_Icon} />
-          <TwitterIcon className={Styles.Social_Icon} />
-          <InsertLinkIcon className={Styles.Social_Icon} />
-        </div>
-
-        <Featured />
       </div>
     </nav>
   );
