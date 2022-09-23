@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Styles from "./Styles/Nav.module.css";
 
+import { Link } from "react-router-dom";
+
 // import Accordion from "react-bootstrap/Accordion";
 
 import CloseIcon from "@mui/icons-material/Close";
@@ -12,14 +14,9 @@ import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 
 import HeroSlider from "../Sliders/Hero-Slider/HeroSlider";
-
 import Featured from "../Project-Data/Featured/Featured";
 import Social from "../Sliders/Social/Social";
 
@@ -47,19 +44,19 @@ const Nav = () => {
 
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="/" className={Styles.Navlink}>
               Home
-            </a>
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="#" className={Styles.Navlink}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="#" className={Styles.Navlink}>
               Posts
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -80,24 +77,24 @@ const Nav = () => {
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.ShowMenu : ""}`}>
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="/" className={Styles.Navlink}>
               Home
-            </a>
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="#" className={Styles.Navlink}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="#" className={Styles.Navlink}>
               Posts
-            </a>
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <a href="#" className={Styles.Navlink}>
+            <Link to="#" className={Styles.Navlink}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -108,7 +105,7 @@ const Nav = () => {
             <InsertLinkIcon className={Styles.Social_Icon} />
           </div>
 
-        {/* <Youtube /> */}
+        <Social />
       </div>
     </nav>
   );

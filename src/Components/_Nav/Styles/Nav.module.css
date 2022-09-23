@@ -56,16 +56,17 @@
   flex-direction: column;
   padding: 5px;
   gap: 10px;
+  overflow-y: scroll;
   position: absolute;
-  top: 55px;
+  top: 0px;
   right: 0px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 300px;
-  z-index: 100;
+  z-index: 90;
   transition: 0.5s;
-  transform: translateX(100%);
+  transform: translateY(-100%);
 }
 .Nav .Mobile_Menu .Logo {
   position: absolute;
@@ -80,7 +81,7 @@
 .Nav .Mobile_Menu .Navlink_Container {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 5px;
   gap: 15px;
   width: 100%;
   height: -webkit-fit-content;
@@ -109,7 +110,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .Nav .ShowMenu {
-  transform: translateX(-5px);
+  transform: translateY(55px);
 }
 
 @media only screen and (max-width: 1200px) {
