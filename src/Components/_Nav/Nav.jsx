@@ -101,7 +101,14 @@ const Nav = () => {
           </li>
         </ul>
 
-        <Youtube />
+        <div className={Styles.Social_Icon_Bar}>
+            <LinkedInIcon className={Styles.Social_Icon} />
+            <GitHubIcon className={Styles.Social_Icon} />
+            <TwitterIcon className={Styles.Social_Icon} />
+            <InsertLinkIcon className={Styles.Social_Icon} />
+          </div>
+
+        {/* <Youtube /> */}
       </div>
     </nav>
   );

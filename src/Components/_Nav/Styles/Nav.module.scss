@@ -69,20 +69,20 @@
     display: flex;
     flex-direction: column;
 
-    padding: 10px;
+    padding: 5px;
     gap: 10px;
 
     // justify-content: space-evenly;
     // align-items: center;
 
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 0px;
 
     overflow-y: scroll;
 
     height: fit-content;
-    width: 500px;
+    width: 300px;
 
     z-index: 100;
     transition: 0.5s;
@@ -102,7 +102,6 @@
     }
 
     .Navlink_Container {
-      border: 1px solid white;
       display: flex;
       flex-direction: column;
 
@@ -113,6 +112,36 @@
       height: fit-content;
 
       margin: auto;
+
+      .NavItem {
+        .Navlink {
+          color: white;
+          font-family: sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .Social_Icon_Bar {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+
+      gap: 30px;
+      padding: 5px;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      width: 100%;
+
+      .Social_Icon {
+        color: #319795;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
     }
   }
 
@@ -147,8 +176,7 @@
 @media only screen and (max-width: 500px) {
   .Nav {
     .Mobile_Menu {
-      width: 100%;
+      width: 250px;
     }
   }
 }
-
