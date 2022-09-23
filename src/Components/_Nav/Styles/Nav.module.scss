@@ -77,7 +77,7 @@
     // align-items: center;
 
     position: absolute;
-    top: 0px;
+    top: 55px;
     right: 0px;
 
 
@@ -86,7 +86,9 @@
 
     z-index: 90;
     transition: 0.5s;
-    transform: translateY(-100%);
+    transform: translateX(100%);
+
+    display: none;
 
     .Logo {
       position: absolute;
@@ -146,7 +148,7 @@
   }
 
   .ShowMenu {
-    transform: translateY(55px);
+    transform: translateX(-5px);
   }
 }
 
@@ -169,6 +171,10 @@
       .Nav_Icon {
         display: block;
       }
+    }
+
+    .Mobile_Menu {
+      display: flex;
     }
   }
 }

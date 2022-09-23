@@ -58,7 +58,7 @@
   gap: 10px;
   overflow-y: scroll;
   position: absolute;
-  top: 0px;
+  top: 55px;
   right: 0px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -66,7 +66,8 @@
   width: 300px;
   z-index: 90;
   transition: 0.5s;
-  transform: translateY(-100%);
+  transform: translateX(100%);
+  display: none;
 }
 .Nav .Mobile_Menu .Logo {
   position: absolute;
@@ -110,7 +111,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .Nav .ShowMenu {
-  transform: translateY(55px);
+  transform: translateX(-5px);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -127,6 +128,9 @@
   }
   .Nav .Right_Side .Nav_Icon {
     display: block;
+  }
+  .Nav .Mobile_Menu {
+    display: flex;
   }
 }
 @media only screen and (max-width: 500px) {
