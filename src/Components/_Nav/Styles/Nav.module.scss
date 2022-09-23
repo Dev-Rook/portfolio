@@ -18,6 +18,8 @@
 
   .Left_Side {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
     .Logo {
       height: 30px;
@@ -59,123 +61,63 @@
   }
 
   .Mobile_Menu {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     background-color: #1d1d1d;
 
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
 
-    position: fixed;
-    top: 0px;
+    padding: 10px;
+    gap: 10px;
+
+    // justify-content: space-evenly;
+    // align-items: center;
+
+    position: absolute;
+    top: 50px;
     right: 0px;
 
-    height: 100vh;
-    width: 100%;
+    overflow-y: scroll;
+
+    height: fit-content;
+    width: 500px;
 
     z-index: 100;
-    transform: translateY(100%);
     transition: 0.5s;
+    transform: translateX(100%);
 
-    .Content_Wrapper {
+    .Logo {
+      position: absolute;
+      top: 10px;
+    }
+
+    .CloseIcon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      color: white;
+    }
+
+    .Navlink_Container {
+      border: 1px solid white;
       display: flex;
       flex-direction: column;
 
-      padding: 5px;
+      padding: 0px;
       gap: 15px;
 
-      justify-content: space-evenly;
-      align-items: center;
-
       width: 100%;
-      height: 100%;
-      .Header {
-        display: flex;
-        flex-direction: column;
+      height: fit-content;
 
-        width: 100%;
-        padding: 5px;
-        justify-content: space-between;
-        align-items: left;
-        position: relative;
-
-        background-color: rgba(0, 0, 0, 0.8);
-
-        .Logo {
-          height: 60px;
-          width: 60px;
-        }
-
-        .Large_Text {
-          color: white;
-          font-family: "Nunito", sans-serif;
-          font-weight: 400;
-          font-size: 50px;
-          text-align: left;
-          transition: 0.5s;
-
-          .Red_R {
-            color: red;
-          }
-        }
-
-        .CloseIcon {
-          color: white;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-        }
-      }
-
-      .Navlink_Container {
-        display: flex;
-        flex-direction: column;
-
-        padding: 0;
-        gap: 18px;
-
-        justify-content: left;
-        align-items: center;
-
-        width: 100%;
-
-        .NavItem {
-          display: flex;
-          margin: auto;
-          width: 100%;
-          .Navlink {
-            color: white;
-            font-family: sans-serif;
-            font-size: 25px;
-            font-weight: 400;
-          }
-        }
-      }
-
-      .Social_Icon_Bar {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-          rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: flex;
-
-        gap: 30px;
-        padding: 5px;
-
-        justify-content: space-evenly;
-        align-items: center;
-
-        width: 100%;
-
-        .Social_Icon {
-          color: #319795;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-            rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
-      }
+      margin: auto;
     }
   }
 
   .ShowMenu {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -188,6 +130,7 @@
 @media only screen and (max-width: 768px) {
   .Nav {
     .Left_Side {
+      gap: 20px;
       .Navlink_Container {
         display: none;
       }
@@ -198,20 +141,14 @@
         display: block;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Nav {
     .Mobile_Menu {
       width: 100%;
     }
   }
 }
 
-@media only screen and (max-width: 320px) {
-  .Nav {
-    .Mobile_Menu {
-      .Content_Wrapper {
-        .Header {
-          margin-top: 260px;
-        }
-      }
-    }
-  }
-}
