@@ -16,7 +16,7 @@ const SocialData = [
   },
   {
     id: 4,
-    Thumbnail: "",
+    Thumbnail: "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/David.jpg?raw=true",
     Title: "Instagram",
   },
   {
