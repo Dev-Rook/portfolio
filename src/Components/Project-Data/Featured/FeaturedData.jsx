@@ -2,6 +2,8 @@ const FeaturedData = [
   {
     id: 1,
     Name: "Weather App",
+    Image:
+      "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Weather-Thumbnail.png?raw=true",
     Description: "Placeholder text for project details",
     Stacks: {
       Stack1: "React JS",
@@ -10,6 +12,7 @@ const FeaturedData = [
       Stack4: "AOS",
     },
     Link: "https://improved-weather-app.vercel.app/",
+    Code: "https://github.com/Dev-Rook/improved-weather-app",
   },
   {
     id: 2,
@@ -21,7 +24,8 @@ const FeaturedData = [
       Stack3: "Stack",
       Stack4: "Stack",
     },
-    Link: "",
+    Link: "https://variation-control.vercel.app/",
+    Code: "https://github.com/Dev-Rook/temperature-control-app",
   },
   {
     id: 3,
@@ -34,6 +38,7 @@ const FeaturedData = [
       Stack4: "Stack",
     },
     Link: "",
+    Code: "",
   },
   {
     id: 4,
@@ -46,6 +51,7 @@ const FeaturedData = [
       Stack4: "Stack",
     },
     Link: "",
+    Code: "",
   },
   {
     id: 5,
@@ -58,6 +64,7 @@ const FeaturedData = [
       Stack4: "Stack",
     },
     Link: "",
+    Code: "",
   },
 ];
 

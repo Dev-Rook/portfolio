@@ -38,6 +38,13 @@
   height: 200px;
   width: 100%;
 }
+.Rack .Swiper .Card_Container .Display_Image_Container .Display_Image {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .Rack .Swiper .Card_Container .Decription {
   color: white;
   font-family: "Montserrat", sans-serif;
