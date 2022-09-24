@@ -4,7 +4,7 @@ const FeaturedData = [
     Name: "Weather App",
     Image:
       "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Weather-Thumbnail.png?raw=true",
-    Description: "Placeholder text for project details",
+    Description: "Dark themed weather application.",
     Stacks: {
       Stack1: "React JS",
       Stack2: "Material UI",
