@@ -6,8 +6,8 @@ const FeaturedData = [
       "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Weather-Thumbnail.png?raw=true",
     Description: "Dark themed weather application.",
     Stacks: {
-      Stack1: "React JS",
-      Stack2: "Material UI",
+      Stack1: "React",
+      Stack2: "MUI",
       Stack3: "Framer Motion",
       Stack4: "AOS",
     },
@@ -19,7 +19,7 @@ const FeaturedData = [
     Name: "Name",
     Image:
       "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Control.png?raw=true",
-    Description: "Placeholder text for project details",
+    Description: "Temperature variation control pannel",
     Stacks: {
       Stack1: "Stack",
       Stack2: "Stack",

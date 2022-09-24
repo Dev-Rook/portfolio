@@ -95,9 +95,6 @@ const Featured = () => {
                     <button className={Styles.Stack_Box}>
                       {Stacks.Stack4}
                     </button>
-                    <button className={Styles.Stack_Box}>
-                      {Stacks.Stack4}
-                    </button>
                   </div>
                 </div>
               </SwiperSlide>

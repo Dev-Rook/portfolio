@@ -38,12 +38,12 @@ const Youtube = () => {
         breakpoints={{
           360: {
             width: 360,
-            slidesPerView: 1,
+            slidesPerView: 1.5,
             spaceBetween: 10,
           },
           380: {
             width: 380,
-            slidesPerView: 1.2,
+            slidesPerView: 1.5,
             spaceBetween: 10,
           },
           480: {
@@ -58,7 +58,7 @@ const Youtube = () => {
           },
           1920: {
             width: 1920,
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 0,
           },
         }}
