@@ -1,7 +1,7 @@
 const SocialData = [
   {
     id: 1,
-    Thumbnail: "",
+    Thumbnail: "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/So,%20what%20can%20I%20do%20to%20get%20you%20into%20some%20cybernetic%20implants%20_today__.jpg?raw=true",
     Title: "Code Runners",
   },
   {
