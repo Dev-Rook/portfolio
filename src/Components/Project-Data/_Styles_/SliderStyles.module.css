@@ -37,6 +37,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   height: 200px;
   width: 100%;
+  overflow: hidden;
 }
 .Rack .Swiper .Card_Container .Display_Image_Container .Display_Image {
   height: 100%;

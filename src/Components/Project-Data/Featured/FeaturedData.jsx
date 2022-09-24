@@ -17,6 +17,8 @@ const FeaturedData = [
   {
     id: 2,
     Name: "Name",
+    Image:
+      "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Control.png?raw=true",
     Description: "Placeholder text for project details",
     Stacks: {
       Stack1: "Stack",
@@ -30,6 +32,7 @@ const FeaturedData = [
   {
     id: 3,
     Name: "Name",
+    Image: "",
     Description: "Placeholder text for project details",
     Stacks: {
       Stack1: "Stack",
@@ -43,6 +46,7 @@ const FeaturedData = [
   {
     id: 4,
     Name: "Name",
+    Image: "",
     Description: "Placeholder text for project details",
     Stacks: {
       Stack1: "Stack",
@@ -56,6 +60,7 @@ const FeaturedData = [
   {
     id: 5,
     Name: "Name",
+    Image: "",
     Description: "Placeholder text for project details",
     Stacks: {
       Stack1: "Stack",
