@@ -58,7 +58,7 @@ const Youtube = () => {
           },
           1920: {
             width: 1920,
-            slidesPerView: 4,
+            slidesPerView: 6,
             spaceBetween: 0,
           },
         }}

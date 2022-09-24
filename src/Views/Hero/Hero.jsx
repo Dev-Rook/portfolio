@@ -9,6 +9,10 @@ import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import HeroSlider from "../../Components/Sliders/Hero-Slider/HeroSlider";
 
 const Hero = () => {
+
+  console.log(String.raw `Hello\nWorld`);
+
+
   return (
     <div className={Styles.Hero}>
       <HeroSlider />

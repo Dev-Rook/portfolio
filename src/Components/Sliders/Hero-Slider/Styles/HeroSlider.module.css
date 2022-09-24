@@ -4,7 +4,7 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 500px;
   width: 100%;
   transition: 0.5s;
 }
@@ -28,4 +28,15 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .HeroSliderContainer {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .HeroSliderContainer {
+    height: 250px;
+  }
 }/*# sourceMappingURL=HeroSlider.module.css.map */
