@@ -26,9 +26,7 @@ const Hero = () => {
         <div className={Styles.Info_Section}>
           <h3 className={Styles.Title}>BIO</h3>
           <p className={Styles.Bio_Text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            odio impedit sit sapiente possimus explicabo modi quia earum
-            repellendus nostrum.
+          Software engineer with 1 year overall Web Development experience. As a Junior Web Developer and am versed in: Html, CSS & JavaScript. However I am skilled in utilizing React JS with a variety of libraries and APIs to solve problems and create websites. Currently I am focused on becoming a valuable integration to any team I am on to develop projects that align with modern UI/UX standards.
           </p>
         </div>
 
