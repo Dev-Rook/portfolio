@@ -45,6 +45,7 @@
   margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
 }
 .Rack .Swiper .Card_Container .Decription {
   color: white;
