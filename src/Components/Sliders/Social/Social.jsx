@@ -16,7 +16,7 @@ import "swiper/css/scrollbar";
 import SocialData from "./SocialData";
 
 const Youtube = () => {
-    const [cardData, setCardData] = useState(SocialData);
+  const [cardData, setCardData] = useState(SocialData);
 
   return (
     <div className={Styles.Rack}>
@@ -65,14 +65,16 @@ const Youtube = () => {
       >
         <div className={Styles.Tray}>
           {cardData.map((slide) => {
-            const { id, Thumbnail, Title } = slide;
+            const { id, Thumbnail, Title, Link } = slide;
 
             return (
               <SwiperSlide className={Styles.Slide}>
-                <div className={Styles.Card} key={id}>
+                <a target={"_blank"} href={Link} className={Styles.Link}>
+                  <div className={Styles.Card} key={id}>
                     <img src={Thumbnail} alt="" className={Styles.Image} />
                     <h3 className={Styles.Title}>{Title}</h3>
-                </div>
+                  </div>
+                </a>
               </SwiperSlide>
             );
           })}

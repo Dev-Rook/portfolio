@@ -21,10 +21,10 @@ const HeroSlider = () => {
         slidesPerView={1}
         spaceBetween={10}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         grabCursor={true}
         loop
         pagination={{
@@ -34,7 +34,7 @@ const HeroSlider = () => {
         className={Styles.Swiper}
       >
         <SwiperSlide className={Styles.Slide}>
-          {/* <img src={require("../../../Assets/Images/Brown-Topography-Map.jpg")} alt="" className={Styles.Slide_Image} /> */}
+          <img src={require("../../../Assets/Images/404.jpg")} alt="" className={Styles.Slide_Image} />
         </SwiperSlide>
       </Swiper>
     </div>

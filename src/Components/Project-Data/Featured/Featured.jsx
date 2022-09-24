@@ -65,13 +65,19 @@ const Featured = () => {
       >
         <div className={Styles.Tray}>
           {cardData.map((slide) => {
-            const { id, Name, Image, Description, Stacks } = slide;
+            const { id, Name, Image, Description, Stacks, Link } = slide;
 
             return (
               <SwiperSlide className={Styles.Slide}>
                 <div className={Styles.Card_Container} key={id}>
                   <div className={Styles.Display_Image_Container}>
-                    <img src={Image} alt="" className={Styles.Display_Image} />
+                    <a target={"_blank"} href={Link} className={Styles.Link}>
+                      <img
+                        src={Image}
+                        alt=""
+                        className={Styles.Display_Image}
+                      />
+                    </a>
                   </div>
 
                   <h3 className={Styles.Decription}>{Description}</h3>
@@ -85,6 +91,9 @@ const Featured = () => {
                     </button>
                     <button className={Styles.Stack_Box}>
                       {Stacks.Stack3}
+                    </button>
+                    <button className={Styles.Stack_Box}>
+                      {Stacks.Stack4}
                     </button>
                     <button className={Styles.Stack_Box}>
                       {Stacks.Stack4}

@@ -1,7 +1,7 @@
 const FeaturedData = [
   {
     id: 1,
-    Name: "Name",
+    Name: "Weather App",
     Description: "Placeholder text for project details",
     Stacks: {
       Stack1: "React JS",
@@ -9,6 +9,7 @@ const FeaturedData = [
       Stack3: "Framer Motion",
       Stack4: "AOS",
     },
+    Link: "https://improved-weather-app.vercel.app/",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const FeaturedData = [
       Stack3: "Stack",
       Stack4: "Stack",
     },
+    Link: "",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const FeaturedData = [
       Stack3: "Stack",
       Stack4: "Stack",
     },
+    Link: "",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const FeaturedData = [
       Stack3: "Stack",
       Stack4: "Stack",
     },
+    Link: "",
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const FeaturedData = [
       Stack3: "Stack",
       Stack4: "Stack",
     },
+    Link: "",
   },
 ];
 
