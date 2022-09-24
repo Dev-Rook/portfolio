@@ -14,8 +14,6 @@ import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-
-
 import HeroSlider from "../Sliders/Hero-Slider/HeroSlider";
 import Featured from "../Project-Data/Featured/Featured";
 import Social from "../Sliders/Social/Social";
@@ -27,20 +25,16 @@ const Nav = () => {
     setMenu((prev) => !prev);
   };
 
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
   return (
     <nav className={Styles.Nav}>
       <div className={Styles.Left_Side}>
-        <img
+        <Link to="/">
+          {/* <img
           src={require("../../Assets/Icons/Logo.png")}
           alt=""
           className={Styles.Logo}
-        />
+        /> */}
+        </Link>
 
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
@@ -99,11 +93,11 @@ const Nav = () => {
         </ul>
 
         <div className={Styles.Social_Icon_Bar}>
-            <LinkedInIcon className={Styles.Social_Icon} />
-            <GitHubIcon className={Styles.Social_Icon} />
-            <TwitterIcon className={Styles.Social_Icon} />
-            <InsertLinkIcon className={Styles.Social_Icon} />
-          </div>
+          <LinkedInIcon className={Styles.Social_Icon} />
+          <GitHubIcon className={Styles.Social_Icon} />
+          <TwitterIcon className={Styles.Social_Icon} />
+          <InsertLinkIcon className={Styles.Social_Icon} />
+        </div>
 
         <Social />
       </div>

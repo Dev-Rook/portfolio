@@ -78,35 +78,35 @@ const Hero = () => {
           <div className={Styles.Tech}>
             <div className={Styles.Tech_Card}>
               <img
-                src={require("../../Assets/Icons/Html-Icon.png")}
+                src={`https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Icons/Html-Icon.png?raw=true`}
                 alt=""
                 className={Styles.Tech_Image}
               />
             </div>
             <div className={Styles.Tech_Card}>
               <img
-                src={require("../../Assets/Icons/Css-Icon.png")}
+                src={`https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Icons/Css-Icon.png?raw=true`}
                 alt=""
                 className={Styles.Tech_Image}
               />
             </div>
             <div className={Styles.Tech_Card}>
               <img
-                src={require("../../Assets/Icons/Scss-Icon.png")}
+                src={`https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Icons/Scss-Icon.png?raw=true`}
                 alt=""
                 className={Styles.Tech_Image}
               />
             </div>
             <div className={Styles.Tech_Card}>
               <img
-                src={require("../../Assets/Icons/JavaScript-Icon.png")}
+                src={`https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Icons/JavaScript-Icon.png?raw=true`}
                 alt=""
                 className={Styles.Tech_Image}
               />
             </div>
             <div className={Styles.Tech_Card}>
               <img
-                src={require("../../Assets/Icons/React-Icon.png")}
+                src={`https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Icons/React-Icon.png?raw=true`}
                 alt=""
                 className={Styles.Tech_Image}
               />
