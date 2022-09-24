@@ -11,7 +11,7 @@ const SocialData = [
   },
   {
     id: 3,
-    Thumbnail: "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/download.jpg",
+    Thumbnail: "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/download.jpg?raw=true",
     Title: "Twitter",
   },
   {
@@ -21,7 +21,7 @@ const SocialData = [
   },
   {
     id: 5,
-    Thumbnail: "",
+    Thumbnail: "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Digital%20Art%20and%20Renaissance%20Statues_%20An%20Unlikely%20Combination%20That%20Actually%20Works!.jpg?raw=true",
     Title: "Steam",
   },
   {
