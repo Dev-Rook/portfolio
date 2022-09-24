@@ -6,7 +6,7 @@ const SocialData = [
   },
   {
     id: 2,
-    Thumbnail: "",
+    Thumbnail: "https://github.com/Dev-Rook/portfolio/blob/master/src/Assets/Images/Thumbnails/Carbon%20Claws.png?raw=true",
     Title: "YouTube",
   },
   {
