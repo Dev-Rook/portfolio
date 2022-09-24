@@ -82,13 +82,16 @@
 .Nav .Mobile_Menu .Navlink_Container {
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  gap: 15px;
+  padding: 0px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: auto;
+}
+.Nav .Mobile_Menu .Navlink_Container .NavItem {
+  border-bottom: 2px solid grey;
+  padding: 5px;
 }
 .Nav .Mobile_Menu .Navlink_Container .NavItem .Navlink {
   color: white;

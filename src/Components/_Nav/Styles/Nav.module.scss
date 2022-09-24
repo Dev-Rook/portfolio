@@ -107,8 +107,7 @@
       display: flex;
       flex-direction: column;
 
-      padding: 5px;
-      gap: 15px;
+      padding: 0px;
 
       width: 100%;
       height: fit-content;
@@ -116,6 +115,8 @@
       margin: auto;
 
       .NavItem {
+        border-bottom: 2px solid grey;
+        padding: 5px;
         .Navlink {
           color: white;
           font-family: sans-serif;
